@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        window对象：
+            - 窗口对象
+            - 是全局作用域中的顶级对象
+            - function和var声明的函数、变量都作为window的属性
+    -->
+</body>
+</html>
+<script>
+    // 判断以下表达式结果
+    var i = 10
+    function func(){
+        console.log('Function')
+    }
+    console.log(i === window.i)
+    console.log(func === window.func)
+    console.log(document === window.document)
+
+</script>
